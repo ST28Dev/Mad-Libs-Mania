@@ -12,7 +12,7 @@ a.link {
 
 @media screen and (max-width:600px) {
   ul.credit-list {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 
