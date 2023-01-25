@@ -3,17 +3,11 @@
 }
 
 ul.credit-list {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 a.link {
   width: auto;
-}
-
-@media screen and (max-width:600px) {
-  ul.credit-list {
-    max-width: 70%;
-  }
 }
 
 a.credit-link {
