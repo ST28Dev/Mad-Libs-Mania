@@ -87,7 +87,7 @@ function App() {
               <div className="mb-2">
                 <label>{item}:</label>
                 <br />
-                <input key={Math.random() * 100}></input>
+                <input className="input_field" key={Math.random() * 100}></input>
               </div>
             );
           })}

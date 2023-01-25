@@ -6,6 +6,10 @@ ul.credit-list {
   max-width: 50%;
 }
 
+a.link {
+  width: auto;
+}
+
 @media screen and (max-width:600px) {
   ul.credit-list {
     max-width: 70%;
@@ -15,6 +19,16 @@ ul.credit-list {
 a.credit-link {
   text-decoration: none;
   color: blueviolet;
+}
+
+input.input_field:focus {
+  background-color: rgb(55, 57, 65);
+  color: white;
+  animation-duration: 5s;
+}
+
+img.logo-link {
+  border-radius: 25px;
 }
 
 #logo {
