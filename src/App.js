@@ -8,7 +8,7 @@ function App() {
   const [newPromptGen,setGen] = useState(false)
 
   useEffect(() => {
-    document.title = "Mad Libs";
+    document.title = "Mad Libs Mania 📜";
   }, []);
 
   useEffect(() => {
@@ -77,7 +77,7 @@ function App() {
     };
 
     return (
-      <div className="ms-3">
+      <div className="ms-3 " >
         <div>
           <h2>Prompt title: {title}</h2>
         </div>
@@ -85,17 +85,17 @@ function App() {
           {processed_matches.map((item, index) => {
             return (
               <div className="mb-2">
-                <label>{item}:</label>
+                <label className="font-ubuntu fs-5">{item}:</label>
                 <br />
-                <input className="input_field" key={Math.random() * 100}></input>
+                <input className="input_field mb-2 font-lato" key={Math.random() * 100}></input>
               </div>
             );
           })}
           <div className="my-3">
-          <button className="me-2" key={Math.random() * 100} onClick={fillChoices}>
+          <button className="me-2 btn btn-lg btn-success" key={Math.random() * 100} onClick={fillChoices}>
             Submit
           </button>
-          <button onClick={()=>{
+          <button className="btn btn-warning btn-lg" onClick={()=>{
             while(prompt === currentPrompt){
               prompt = generate_prompt()
             }
@@ -107,7 +107,7 @@ function App() {
           }}>Generate New Prompt</button>
           </div>
         </div>
-        <div id="prompt_container" hidden className="my-2 mw-100 p-2">
+        <div id="prompt_container" hidden className="mw-100 p-2">
           <h1>Prompt:</h1>
           <p id="prompt_display"></p>
         </div>

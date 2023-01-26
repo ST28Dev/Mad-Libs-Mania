@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 ul.credit-list {
   max-width: 100%;
 }
@@ -15,10 +23,15 @@ a.credit-link {
   color: blueviolet;
 }
 
+input.input_field {
+  background-color: aliceblue;
+  padding: 5px;
+  font-size: 1.1em;
+  min-width: 22%;
+}
+
 input.input_field:focus {
-  background-color: rgb(55, 57, 65);
-  color: white;
-  animation-duration: 5s;
+  background-color: rgb(188, 221, 253);
 }
 
 img.logo-link {
@@ -27,4 +40,28 @@ img.logo-link {
 
 #logo {
   max-width: 100%;
+}
+
+#logo_icon {
+  transform: rotate(-15deg);
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  bottom: 5px;
+  right: 25px;
+}
+
+#prompt_title {
+  margin: auto;
+}
+
+
+@media (min-width: 344px) and (max-width: 750px) {
+  input.input_field {
+    width: 70%;
+  }
+
+  #logo_icon {
+    display: none;
+  }
 }
